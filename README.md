@@ -15,6 +15,7 @@ HLS Demo Project
 
 2. Configuração nginx
 vi /etc/nginx/config.d/hls_vs.conf
+
 server {
 
     listen 80;
