@@ -47,7 +47,14 @@ mkdir -p /data/videos
 ```
 
 ## 3. Conversão de h264 para ogg
+### Instalação do ffmpeg2theora
+```
+wget http://v2v.cc/~j/ffmpeg2theora/ffmpeg2theora-0.29.linux64.bin
+chmod +x ffmpeg2theora-0.29.linux64.bin
+sudo install -m 755 ffmpeg2theora-0.29.linux64.bin /usr/local/bin/ffmpeg2theora
+```
 
+http://v2v.cc/~j/ffmpeg2theora/examples.html
 ```
 root@ip-10-147-221-30:/videos/fantastic_four# ffmpeg2theora fantastic_four.mp4
 
@@ -73,4 +80,13 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'fantastic_four.mp4':
 
   0:02:09.23 audio: 65kbps video: 2231kbps, time elapsed: 00:04:17
   0:02:09.23 audio: 65kbps video: 2231kbps, time elapsed: 00:04:17
+```
+### Comparativo de tamanhos após a conversão
+```
+root@ip-10-147-221-30:/videos/fantastic_four# ls -lha
+total 216M
+drwxr-xr-x 2 root root 4.0K Jul  4 16:58 .
+drwxr-xr-x 3 root root 4.0K Jul  4 03:43 ..
+-rw-r--r-- 1 root root  91M May 22  2007 fantastic_four.mp4
+-rw-r--r-- 1 root root  36M Jul  4 17:03 fantastic_four.ogv
 ```
