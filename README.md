@@ -93,6 +93,7 @@ drwxr-xr-x 3 root root 4.0K Jul  4 03:43 ..
 
 
 ### Split do video em diversos .TS
+#### http://webcache.googleusercontent.com/search?q=cache:hddaFrJ1P44J:samalpramod.blogspot.com/2013/03/how-convert-mp4-file-to-http-live.html+ffmpeg+hls+segmenter&cd=4&hl=pt-BR&ct=clnk&gl=br&client=firefox-a
 
 ```
 ffmpeg -i valentina.mp4  -c:a libmp3lame -ar 48000 -ab 64k  -c:v libx264 -vcodec copy -vbsf h264_mp4toannexb  -flags -global_header -map 0 -f segment  -segment_list myvideo.m3u8 -segment_format mpegts str%05d.ts
