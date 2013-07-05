@@ -98,3 +98,25 @@ drwxr-xr-x 3 root root 4.0K Jul  4 03:43 ..
 ```
 ffmpeg -i valentina.mp4  -c:a libmp3lame -ar 48000 -ab 64k  -c:v libx264 -vcodec copy -vbsf h264_mp4toannexb  -flags -global_header -map 0 -f segment  -segment_list myvideo.m3u8 -segment_format mpegts str%05d.ts
 ```
+## Historico de comandos
+
+  542  apt-get install php
+  543  apt-get install php5
+  544  apt-get install php5-fpm php-pear php5-dev
+  545  cd ..
+  546  ls
+  547  vi index.php
+  548  vi /etc/nginx/conf.d/hls_vs.conf
+  549  nginx -s stop
+  550  nginx
+  551  ls
+  552  ll
+  553  chown www-data:www-data index.php
+  554  ll
+  555  chown www-data:www-data java.zip
+  556  vi index.php
+  557  service php5-fpm start
+  558  vi /etc/nginx/conf.d/hls_vs.conf
+  559  nginx -s stop
+  560  nginx
+  561  history
