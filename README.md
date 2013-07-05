@@ -90,3 +90,10 @@ drwxr-xr-x 3 root root 4.0K Jul  4 03:43 ..
 -rw-r--r-- 1 root root  91M May 22  2007 fantastic_four.mp4
 -rw-r--r-- 1 root root  36M Jul  4 17:03 fantastic_four.ogv
 ```
+
+
+### Split do video em diversos .TS
+
+```
+ffmpeg -i valentina.mp4  -c:a libmp3lame -ar 48000 -ab 64k  -c:v libx264 -vcodec copy -vbsf h264_mp4toannexb  -flags -global_header -map 0 -f segment  -segment_list myvideo.m3u8 -segment_format mpegts str%05d.ts
+```
