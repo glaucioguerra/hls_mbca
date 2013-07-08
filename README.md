@@ -120,3 +120,19 @@ vi /etc/nginx/conf.d/hls_vs.conf
 nginx -s stop
 nginx
 history
+
+## Alterar tamanho máximo de upload
+
+### nginx
+  Editar /etc/nginx/conf.d/hls_vs.conf e adicionar a clausula 
+  
+  client_max_body_size 20M;
+
+
+### Php
+
+ vi /etc/php5/fpm/php.ini
+ 
+ Editar post_max_size = 20M
+ 
+
