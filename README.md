@@ -96,27 +96,27 @@ drwxr-xr-x 3 root root 4.0K Jul  4 03:43 ..
 #### http://webcache.googleusercontent.com/search?q=cache:hddaFrJ1P44J:samalpramod.blogspot.com/2013/03/how-convert-mp4-file-to-http-live.html+ffmpeg+hls+segmenter&cd=4&hl=pt-BR&ct=clnk&gl=br&client=firefox-a
 
 ```
-ffmpeg -i valentina.mp4  -c:a libmp3lame -ar 48000 -ab 64k  -c:v libx264 -vcodec copy -vbsf h264_mp4toannexb  -flags -global_header -map 0 -f segment  -segment_list myvideo.m3u8 -segment_format mpegts str%05d.ts
+/ffmpeg/bin/ffmpeg -i valentina.mp4  -c:a libmp3lame -ar 48000 -ab 64k -c:v libx264 -r 24 -flags -global_header -map 0 -f segment  -segment_time 10 -segment_list myvideo.m3u8 -segment_format mpegts str%05d.ts
+
 ```
 ## Historico de comandos
-
-  542  apt-get install php
-  543  apt-get install php5
-  544  apt-get install php5-fpm php-pear php5-dev
-  545  cd ..
-  546  ls
-  547  vi index.php
-  548  vi /etc/nginx/conf.d/hls_vs.conf
-  549  nginx -s stop
-  550  nginx
-  551  ls
-  552  ll
-  553  chown www-data:www-data index.php
-  554  ll
-  555  chown www-data:www-data java.zip
-  556  vi index.php
-  557  service php5-fpm start
-  558  vi /etc/nginx/conf.d/hls_vs.conf
-  559  nginx -s stop
-  560  nginx
-  561  history
+apt-get install php
+apt-get install php5
+apt-get install php5-fpm php-pear php5-dev
+cd ..
+ls
+vi index.php
+vi /etc/nginx/conf.d/hls_vs.conf
+nginx -s stop
+nginx
+ls
+ll
+chown www-data:www-data index.php
+ll
+chown www-data:www-data java.zip
+vi index.php
+service php5-fpm start
+vi /etc/nginx/conf.d/hls_vs.conf
+nginx -s stop
+nginx
+history
