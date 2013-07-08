@@ -134,5 +134,7 @@ history
  vi /etc/php5/fpm/php.ini
  
  Editar post_max_size = 20M
+ upload_max_filesize = 20M
+
  
 
