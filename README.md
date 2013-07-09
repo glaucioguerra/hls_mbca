@@ -136,5 +136,11 @@ history
  Editar post_max_size = 20M
  upload_max_filesize = 20M
 
+ ## Git
+ 
+ ### Diretório do repositório:
+ 
+ /hls_mbca
+ 
  
 
