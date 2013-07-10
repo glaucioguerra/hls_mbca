@@ -143,4 +143,10 @@ history
  /hls_mbca
  
  
+## Fluxo de teste
+
+1. Acessar http://ec2-50-16-16-204.compute-1.amazonaws.com
+2. Efetuar upload de video (5 min. em média para converter para hls).
+3. Testar video com suporte a hls e ogv.
+4. Listar / acessar videos já convertidos.
 
